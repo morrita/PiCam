@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+/* Default styling for this specific page. */
+body {background-color: white; 					
+	width: 900px;	
+	margin: 0 auto;  /* top and bottom 0, right and left auto */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+        display:block;}
+
+
+#content {font-size: 10pt;
+          margin: 0 auto;
+          text-align: center;
+	  color: #069;
+          display: block;}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) {
+    body {
+        background-color: white;
+	width: 600px;	
+    }
+
+   #content {width: 600px;
+             height: 400px;
+   }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) {
+    body {
+        background-color: white;
+	width: 300px;	
+    }
+
+   #content {width: 300px;
+             height: 200px;
+   }
+
+}
+
+		
+/* Default styling for anything within the wrap division. */   
+#wrap {	margin-left: auto;		/* set within wrap in center */ 
+	margin-right: auto;	     	
+      	background-color: White;
+        display:block;}
+		
+			
+h1 {font-size: 1.5em;
+        font-family: 'Abril Fatface';
+	text-align: center;
+	padding: 0.4em 0; /* top and bottom 0.4em, right and left 0 */
+	margin: 0;	/* all 4 margins 0 */
+      	color: #069;
+      	background-color: White;}
+      	
+      	
+ /* Begin Navigation Bar Styling */ 
+#nav {width: 100%;
+      float: left;
+      list-style: none;
+      margin: 0 0 0 0;
+      padding: 0;
+      background-color: White;
+      border: 1px solid #ccc; }
+      	
+#nav li {
+      float: left; 
+      }
+      	
+#nav li a {display: block;
+	padding: 8px 15px;
+      	text-decoration: none;
+      	font-weight: bold;
+      	font-size: 10pt;
+      	color: #069;
+      	border-right: 1px solid #ccc;}  	
+      	  		   
+   #nav li a:hover {
+      color: #c00;
+      background-color: #fff; }
+   /* End navigation bar styling. */ 
+  
+#loader {width: 100px;
+         height: 100px;
+         margin: auto; 
+         display: none;}
